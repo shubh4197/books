@@ -1,0 +1,14 @@
+<div class="container-fluid">
+<div class="row lol2">
+<div *ngFor="let card of Data.book" class="col-md-3">
+<div class="card lol" style="width: 18rem;">
+    <img class="card-img-top lol1" src={{card.image}} alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{card.title}}</h5>
+      <p class="card-text">Price:{{card.price}}<br>Author:{{card.author}}</p>
+      <a href="#" routerLink="/view/{{card.id}}" class="btn btn-primary">Get Details</a>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
